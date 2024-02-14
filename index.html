@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Esther">
+  <title>sweet stuff 🍭</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    b,
+    body,
+    html,
+    h1 {
+      all: unset;
+    }
+
+    .main {
+      display: block;
+    }
+
+    .container {
+     align-items: center;
+    }
+
+    .container2 {
+      align-items: center;
+      margin-top: 15%;
+    }
+
+    .button {
+      font-size: 20px;
+      border-radius: 20px;
+      background-color: pink;
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: bolder;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+      border: #000 solid 3px;
+      color: black;
+    }
+
+    .button:hover {
+      color: pink;
+      background-color: black;
+    }
+
+    .button:active {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+
+    h1 {
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 900;
+      font-size: 10vmin;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0.1ex 0.6ex 0.4ex;
+    }
+
+    h1+h1 {
+      z-index: 10;
+      color: transparent;
+      background: none;
+    }
+
+    h1+h1::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border: 2px solid #000;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    b {
+      --speed-weed: 50s;
+      --speed-medium: 10s;
+      --speed-speed: 2s;
+
+      --speed: var(--speed-medium);
+      position: absolute;
+      top: calc(var(--rnd1) * 100vh);
+      left: calc(var(--rnd2) * 100vw);
+      animation: var(--speed) drop infinite linear;
+      animation-delay: calc(calc(1 - var(--rnd3)) * -1 * var(--speed));
+      user-select: none;
+      font-size: 5vmin;
+      pointer-events: none;
+      will-change: transform, filter;
+    }
+
+    @keyframes drop {
+      0% {
+        transform: translateY(-100vh) scale(calc(var(--rnd3) * 2 + 1)) rotate(0deg);
+        filter: blur(calc(calc(1 - var(--rnd3)) * 5px));
+      }
+
+      25% {
+        filter: blur(0px);
+      }
+
+      100% {
+        transform: translateY(100vh) scale(calc(var(--rnd3) * 2 + 1)) rotate(1800deg);
+        filter: blur(calc(calc(1 - var(--rnd3)) * 5px));
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+<div class="main">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1>✨ I LUV U ✨</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="images/upside-down-me.png" class="rounded" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="container2 text-center">
+    <div class="row">
+      <div class="col">
+        <a href="upside-down.html" class="button">
+          click it
+        </a>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
